@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4A2CE261-0170-4ADE-9428-18BC9AD67413}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZuoraSwaggerTest</RootNamespace>
+    <AssemblyName>ZuoraSwaggerTest</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.105.2.3\lib\net452\RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IO.Swagger\Api\AccountingCodesApi.cs" />
+    <Compile Include="IO.Swagger\Api\AccountingPeriodsApi.cs" />
+    <Compile Include="IO.Swagger\Api\AccountsApi.cs" />
+    <Compile Include="IO.Swagger\Api\ActionsApi.cs" />
+    <Compile Include="IO.Swagger\Api\AmendmentsApi.cs" />
+    <Compile Include="IO.Swagger\Api\AttachmentsApi.cs" />
+    <Compile Include="IO.Swagger\Api\CatalogApi.cs" />
+    <Compile Include="IO.Swagger\Api\ChargeRevenueSummariesApi.cs" />
+    <Compile Include="IO.Swagger\Api\CommunicationProfilesApi.cs" />
+    <Compile Include="IO.Swagger\Api\ConnectionsApi.cs" />
+    <Compile Include="IO.Swagger\Api\ContactsApi.cs" />
+    <Compile Include="IO.Swagger\Api\CreditBalanceAdjustmentsApi.cs" />
+    <Compile Include="IO.Swagger\Api\CustomExchangeRatesApi.cs" />
+    <Compile Include="IO.Swagger\Api\ExportsApi.cs" />
+    <Compile Include="IO.Swagger\Api\FeaturesApi.cs" />
+    <Compile Include="IO.Swagger\Api\GetFilesApi.cs" />
+    <Compile Include="IO.Swagger\Api\HMACSignaturesApi.cs" />
+    <Compile Include="IO.Swagger\Api\HostedPagesApi.cs" />
+    <Compile Include="IO.Swagger\Api\ImportsApi.cs" />
+    <Compile Include="IO.Swagger\Api\InvoiceAdjustmentsApi.cs" />
+    <Compile Include="IO.Swagger\Api\InvoiceItemAdjustmentsApi.cs" />
+    <Compile Include="IO.Swagger\Api\InvoiceItemsApi.cs" />
+    <Compile Include="IO.Swagger\Api\InvoicePaymentsApi.cs" />
+    <Compile Include="IO.Swagger\Api\InvoicesApi.cs" />
+    <Compile Include="IO.Swagger\Api\InvoiceSplitItemsApi.cs" />
+    <Compile Include="IO.Swagger\Api\InvoiceSplitsApi.cs" />
+    <Compile Include="IO.Swagger\Api\JournalRunsApi.cs" />
+    <Compile Include="IO.Swagger\Api\MassUpdaterApi.cs" />
+    <Compile Include="IO.Swagger\Api\NotificationHistoryApi.cs" />
+    <Compile Include="IO.Swagger\Api\OperationsApi.cs" />
+    <Compile Include="IO.Swagger\Api\PaymentMethodsApi.cs" />
+    <Compile Include="IO.Swagger\Api\PaymentMethodSnapshotsApi.cs" />
+    <Compile Include="IO.Swagger\Api\PaymentMethodTransactionLogsApi.cs" />
+    <Compile Include="IO.Swagger\Api\PaymentsApi.cs" />
+    <Compile Include="IO.Swagger\Api\PaymentTransactionLogsApi.cs" />
+    <Compile Include="IO.Swagger\Api\ProductFeaturesApi.cs" />
+    <Compile Include="IO.Swagger\Api\ProductRatePlanChargesApi.cs" />
+    <Compile Include="IO.Swagger\Api\ProductRatePlanChargeTiersApi.cs" />
+    <Compile Include="IO.Swagger\Api\ProductRatePlansApi.cs" />
+    <Compile Include="IO.Swagger\Api\ProductsApi.cs" />
+    <Compile Include="IO.Swagger\Api\QuotesDocumentApi.cs" />
+    <Compile Include="IO.Swagger\Api\RatePlanChargesApi.cs" />
+    <Compile Include="IO.Swagger\Api\RatePlanChargeTiersApi.cs" />
+    <Compile Include="IO.Swagger\Api\RatePlansApi.cs" />
+    <Compile Include="IO.Swagger\Api\RefundInvoicePaymentsApi.cs" />
+    <Compile Include="IO.Swagger\Api\RefundsApi.cs" />
+    <Compile Include="IO.Swagger\Api\RefundTransactionLogsApi.cs" />
+    <Compile Include="IO.Swagger\Api\RevenueEventsApi.cs" />
+    <Compile Include="IO.Swagger\Api\RevenueItemsApi.cs" />
+    <Compile Include="IO.Swagger\Api\RevenueRulesApi.cs" />
+    <Compile Include="IO.Swagger\Api\RevenueSchedulesApi.cs" />
+    <Compile Include="IO.Swagger\Api\RSASignaturesApi.cs" />
+    <Compile Include="IO.Swagger\Api\SettingsApi.cs" />
+    <Compile Include="IO.Swagger\Api\SubscriptionProductFeaturesApi.cs" />
+    <Compile Include="IO.Swagger\Api\SubscriptionsApi.cs" />
+    <Compile Include="IO.Swagger\Api\SummaryJournalEntriesApi.cs" />
+    <Compile Include="IO.Swagger\Api\TaxationItemsApi.cs" />
+    <Compile Include="IO.Swagger\Api\TransactionsApi.cs" />
+    <Compile Include="IO.Swagger\Api\UnitOfMeasureApi.cs" />
+    <Compile Include="IO.Swagger\Api\UsageApi.cs" />
+    <Compile Include="IO.Swagger\Client\ApiClient.cs" />
+    <Compile Include="IO.Swagger\Client\ApiException.cs" />
+    <Compile Include="IO.Swagger\Client\ApiResponse.cs" />
+    <Compile Include="IO.Swagger\Client\Configuration.cs" />
+    <Compile Include="IO.Swagger\Client\ExceptionFactory.cs" />
+    <Compile Include="IO.Swagger\Client\IApiAccessor.cs" />
+    <Compile Include="IO.Swagger\Model\Account.cs" />
+    <Compile Include="IO.Swagger\Model\Amendment.cs" />
+    <Compile Include="IO.Swagger\Model\AmendOptions.cs" />
+    <Compile Include="IO.Swagger\Model\AmendRequest.cs" />
+    <Compile Include="IO.Swagger\Model\AmendResult.cs" />
+    <Compile Include="IO.Swagger\Model\ChargeMetricsData.cs" />
+    <Compile Include="IO.Swagger\Model\CommonResponseType.cs" />
+    <Compile Include="IO.Swagger\Model\Contact.cs" />
+    <Compile Include="IO.Swagger\Model\DeleteResult.cs" />
+    <Compile Include="IO.Swagger\Model\ElectronicPaymentOptions.cs" />
+    <Compile Include="IO.Swagger\Model\Error.cs" />
+    <Compile Include="IO.Swagger\Model\EventRevenueItemType.cs" />
+    <Compile Include="IO.Swagger\Model\ExecuteResult.cs" />
+    <Compile Include="IO.Swagger\Model\ExternalPaymentOptions.cs" />
+    <Compile Include="IO.Swagger\Model\FinanceInformation.cs" />
+    <Compile Include="IO.Swagger\Model\GatewayOption.cs" />
+    <Compile Include="IO.Swagger\Model\GatewayOptionData.cs" />
+    <Compile Include="IO.Swagger\Model\GETAccountingCodeItemType.cs" />
+    <Compile Include="IO.Swagger\Model\GETAccountingCodeItemWithoutSuccessType.cs" />
+    <Compile Include="IO.Swagger\Model\GETAccountingCodesType.cs" />
+    <Compile Include="IO.Swagger\Model\GETAccountingPeriodFileIdsType.cs" />
+    <Compile Include="IO.Swagger\Model\GETAccountingPeriodsType.cs" />
+    <Compile Include="IO.Swagger\Model\GETAccountingPeriodType.cs" />
+    <Compile Include="IO.Swagger\Model\GETAccountingPeriodWithoutSuccessType.cs" />
+    <Compile Include="IO.Swagger\Model\GETAccountSummaryInvoiceType.cs" />
+    <Compile Include="IO.Swagger\Model\GETAccountSummaryPaymentInvoiceType.cs" />
+    <Compile Include="IO.Swagger\Model\GETAccountSummaryPaymentType.cs" />
+    <Compile Include="IO.Swagger\Model\GETAccountSummarySubscriptionRatePlanType.cs" />
+    <Compile Include="IO.Swagger\Model\GETAccountSummarySubscriptionType.cs" />
+    <Compile Include="IO.Swagger\Model\GETAccountSummaryType.cs" />
+    <Compile Include="IO.Swagger\Model\GETAccountSummaryTypeBasicInfo.cs" />
+    <Compile Include="IO.Swagger\Model\GETAccountSummaryTypeBasicInfoDefaultPaymentMethod.cs" />
+    <Compile Include="IO.Swagger\Model\GETAccountSummaryTypeBillToContact.cs" />
+    <Compile Include="IO.Swagger\Model\GETAccountSummaryTypeSoldToContact.cs" />
+    <Compile Include="IO.Swagger\Model\GETAccountSummaryTypeTaxInfo.cs" />
+    <Compile Include="IO.Swagger\Model\GETAccountSummaryUsageType.cs" />
+    <Compile Include="IO.Swagger\Model\GETAccountType.cs" />
+    <Compile Include="IO.Swagger\Model\GETAccountTypeBasicInfo.cs" />
+    <Compile Include="IO.Swagger\Model\GETAccountTypeBillingAndPayment.cs" />
+    <Compile Include="IO.Swagger\Model\GETAccountTypeBillToContact.cs" />
+    <Compile Include="IO.Swagger\Model\GETAccountTypeMetrics.cs" />
+    <Compile Include="IO.Swagger\Model\GETAccountTypeSoldToContact.cs" />
+    <Compile Include="IO.Swagger\Model\GETAmendmentType.cs" />
+    <Compile Include="IO.Swagger\Model\GETAttachmentResponseType.cs" />
+    <Compile Include="IO.Swagger\Model\GETAttachmentResponseWithoutSuccessType.cs" />
+    <Compile Include="IO.Swagger\Model\GETAttachmentsResponseType.cs" />
+    <Compile Include="IO.Swagger\Model\GETCalloutHistoryVOsType.cs" />
+    <Compile Include="IO.Swagger\Model\GETCalloutHistoryVOType.cs" />
+    <Compile Include="IO.Swagger\Model\GETCatalogType.cs" />
+    <Compile Include="IO.Swagger\Model\GETChargeRSDetailType.cs" />
+    <Compile Include="IO.Swagger\Model\GETCustomExchangeRatesDataType.cs" />
+    <Compile Include="IO.Swagger\Model\GETCustomExchangeRatesType.cs" />
+    <Compile Include="IO.Swagger\Model\GETEmailHistoryVOsType.cs" />
+    <Compile Include="IO.Swagger\Model\GETEmailHistoryVOType.cs" />
+    <Compile Include="IO.Swagger\Model\GetHostedPagesType.cs" />
+    <Compile Include="IO.Swagger\Model\GetHostedPageType.cs" />
+    <Compile Include="IO.Swagger\Model\GETInvoiceFileType.cs" />
+    <Compile Include="IO.Swagger\Model\GETInvoiceFileWrapper.cs" />
+    <Compile Include="IO.Swagger\Model\GETInvoicesInvoiceItemType.cs" />
+    <Compile Include="IO.Swagger\Model\GETInvoiceType.cs" />
+    <Compile Include="IO.Swagger\Model\GETJournalEntriesInJournalRunType.cs" />
+    <Compile Include="IO.Swagger\Model\GETJournalEntryDetailType.cs" />
+    <Compile Include="IO.Swagger\Model\GETJournalEntryDetailTypeWithoutSuccess.cs" />
+    <Compile Include="IO.Swagger\Model\GETJournalEntryItemType.cs" />
+    <Compile Include="IO.Swagger\Model\GETJournalEntrySegmentType.cs" />
+    <Compile Include="IO.Swagger\Model\GETJournalRunTransactionType.cs" />
+    <Compile Include="IO.Swagger\Model\GETJournalRunType.cs" />
+    <Compile Include="IO.Swagger\Model\GETMassUpdateType.cs" />
+    <Compile Include="IO.Swagger\Model\GETPaidInvoicesType.cs" />
+    <Compile Include="IO.Swagger\Model\GETPaymentMethodsType.cs" />
+    <Compile Include="IO.Swagger\Model\GETPaymentMethodType.cs" />
+    <Compile Include="IO.Swagger\Model\GETPaymentMethodTypeCardHolderInfo.cs" />
+    <Compile Include="IO.Swagger\Model\GETPaymentsType.cs" />
+    <Compile Include="IO.Swagger\Model\GETPaymentType.cs" />
+    <Compile Include="IO.Swagger\Model\GetProductFeatureType.cs" />
+    <Compile Include="IO.Swagger\Model\GETProductRatePlanChargePricingTierType.cs" />
+    <Compile Include="IO.Swagger\Model\GETProductRatePlanChargePricingType.cs" />
+    <Compile Include="IO.Swagger\Model\GETProductRatePlanChargeType.cs" />
+    <Compile Include="IO.Swagger\Model\GETProductRatePlanType.cs" />
+    <Compile Include="IO.Swagger\Model\GETProductType.cs" />
+    <Compile Include="IO.Swagger\Model\GETRevenueEventDetailsType.cs" />
+    <Compile Include="IO.Swagger\Model\GETRevenueEventDetailType.cs" />
+    <Compile Include="IO.Swagger\Model\GETRevenueEventDetailWithoutSuccessType.cs" />
+    <Compile Include="IO.Swagger\Model\GETRevenueItemsType.cs" />
+    <Compile Include="IO.Swagger\Model\GETRevenueItemType.cs" />
+    <Compile Include="IO.Swagger\Model\GETRevenueRecognitionRuleAssociationType.cs" />
+    <Compile Include="IO.Swagger\Model\GETRevenueStartDateSettingType.cs" />
+    <Compile Include="IO.Swagger\Model\GETRSDetailsByChargeType.cs" />
+    <Compile Include="IO.Swagger\Model\GETRSDetailType.cs" />
+    <Compile Include="IO.Swagger\Model\GETRSDetailWithoutSuccessType.cs" />
+    <Compile Include="IO.Swagger\Model\GETRsRevenueItemsType.cs" />
+    <Compile Include="IO.Swagger\Model\GETRsRevenueItemType.cs" />
+    <Compile Include="IO.Swagger\Model\GETSubscriptionProductFeatureType.cs" />
+    <Compile Include="IO.Swagger\Model\GETSubscriptionRatePlanChargesType.cs" />
+    <Compile Include="IO.Swagger\Model\GETSubscriptionRatePlanType.cs" />
+    <Compile Include="IO.Swagger\Model\GETSubscriptionType.cs" />
+    <Compile Include="IO.Swagger\Model\GETSubscriptionTypeWithSuccess.cs" />
+    <Compile Include="IO.Swagger\Model\GETSubscriptionWrapper.cs" />
+    <Compile Include="IO.Swagger\Model\GETTierType.cs" />
+    <Compile Include="IO.Swagger\Model\GETUsageType.cs" />
+    <Compile Include="IO.Swagger\Model\GETUsageWrapper.cs" />
+    <Compile Include="IO.Swagger\Model\Invoice.cs" />
+    <Compile Include="IO.Swagger\Model\InvoiceData.cs" />
+    <Compile Include="IO.Swagger\Model\InvoiceItem.cs" />
+    <Compile Include="IO.Swagger\Model\InvoiceProcessingOptions.cs" />
+    <Compile Include="IO.Swagger\Model\InvoiceResult.cs" />
+    <Compile Include="IO.Swagger\Model\ListOfExchangeRates.cs" />
+    <Compile Include="IO.Swagger\Model\NewChargeMetrics.cs" />
+    <Compile Include="IO.Swagger\Model\PaymentMethod.cs" />
+    <Compile Include="IO.Swagger\Model\POSTAccountingCodeResponseType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTAccountingCodeType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTAccountingPeriodResponseType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTAccountingPeriodType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTAccountResponseType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTAccountType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTAccountTypeBillToContact.cs" />
+    <Compile Include="IO.Swagger\Model\POSTAccountTypeCreditCard.cs" />
+    <Compile Include="IO.Swagger\Model\POSTAccountTypeCreditCardCardHolderInfo.cs" />
+    <Compile Include="IO.Swagger\Model\POSTAccountTypeSoldToContact.cs" />
+    <Compile Include="IO.Swagger\Model\POSTAccountTypeSubscription.cs" />
+    <Compile Include="IO.Swagger\Model\POSTAccountTypeTaxInfo.cs" />
+    <Compile Include="IO.Swagger\Model\POSTAttachmentResponseType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTAttachmentType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTDecryptionType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTDecryptResponseType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTDistributionItemType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTHMACSignatureResponseType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTHMACSignatureType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTInvoiceCollectInvoicesType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTInvoiceCollectResponseType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTInvoiceCollectType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTJournalEntryItemType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTJournalEntryResponseType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTJournalEntrySegmentType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTJournalEntryType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTJournalRunResponseType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTJournalRunTransactionType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTJournalRunType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTMassUpdateResponseType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTMassUpdateType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTMassUpdateTypeParams.cs" />
+    <Compile Include="IO.Swagger\Model\POSTPaymentMethodResponseType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTPaymentMethodType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTPaymentMethodTypeCardHolderInfo.cs" />
+    <Compile Include="IO.Swagger\Model\POSTQuoteDocResponseType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTQuoteDocType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTRevenueScheduleByChargeResponseType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTRevenueScheduleByChargeType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTRevenueScheduleByChargeTypeRevenueEvent.cs" />
+    <Compile Include="IO.Swagger\Model\POSTRevenueScheduleByDateRangeType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTRevenueScheduleByDateRangeTypeRevenueEvent.cs" />
+    <Compile Include="IO.Swagger\Model\POSTRevenueScheduleByTransactionResponseType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTRevenueScheduleByTransactionType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTRevenueScheduleByTransactionTypeRevenueEvent.cs" />
+    <Compile Include="IO.Swagger\Model\POSTRSASignatureResponseType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTRSASignatureType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTScCreateType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTSrpCreateType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTSubscriptionCancellationResponseType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTSubscriptionCancellationType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTSubscriptionPreviewInvoiceItemsType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTSubscriptionPreviewResponseType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTSubscriptionPreviewResponseTypeChargeMetrics.cs" />
+    <Compile Include="IO.Swagger\Model\POSTSubscriptionPreviewType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTSubscriptionPreviewTypePreviewAccountInfo.cs" />
+    <Compile Include="IO.Swagger\Model\POSTSubscriptionPreviewTypePreviewAccountInfoBillToContact.cs" />
+    <Compile Include="IO.Swagger\Model\POSTSubscriptionResponseType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTSubscriptionType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTTierType.cs" />
+    <Compile Include="IO.Swagger\Model\POSTUsageResponseType.cs" />
+    <Compile Include="IO.Swagger\Model\PreviewOptions.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyActionamendRequest.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyActionamendResponse.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyActioncreateRequest.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyActioncreateResponse.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyActiondeleteRequest.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyActiondeleteResponse.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyActionexecuteRequest.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyActionexecuteResponse.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyActiongenerateRequest.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyActiongenerateResponse.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyActionqueryMoreRequest.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyActionqueryMoreResponse.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyActionqueryRequest.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyActionqueryResponse.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyActionsubscribeRequest.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyActionsubscribeResponse.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyActionupdateRequest.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyActionupdateResponse.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyBadRequestResponse.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyBadRequestResponseErrors.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyCreateAccount.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyCreateAccountingCode.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyCreateAmendment.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyCreateContact.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyCreateExport.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyCreateImport.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyCreateInvoice.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyCreateInvoiceAdjustment.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyCreateInvoicePayment.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyCreateOrModifyResponse.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyCreatePayment.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyCreatePaymentMethod.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyCreateProduct.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyCreateProductRatePlan.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyCreateRefund.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyCreateSubscription.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyCreateTaxationItem.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyCreateUnitOfMeasure.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyCreateUsage.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyDeleteResponse.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetAccount.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetAccountingCode.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetAccountingPeriod.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetAmendment.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetCommunicationProfile.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetContact.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetCreditBalanceAdjustment.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetExport.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetFeature.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetImport.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetInvoice.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetInvoiceAdjustment.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetInvoiceItem.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetInvoiceItemAdjustment.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetInvoicePayment.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetInvoiceSplit.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetInvoiceSplitItem.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetPayment.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetPaymentMethod.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetPaymentMethodSnapshot.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetPaymentMethodTransactionLog.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetPaymentTransactionLog.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetProduct.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetProductFeature.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetProductRatePlan.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetProductRatePlanCharge.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetProductRatePlanChargeTier.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetRatePlan.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetRatePlanCharge.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetRatePlanChargeTier.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetRefund.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetRefundInvoicePayment.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetRefundTransactionLog.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetSubscription.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetSubscriptionProductFeature.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetTaxationItem.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetUnitOfMeasure.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyGetUsage.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyModifyAccount.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyModifyAccountingCode.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyModifyAmendment.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyModifyContact.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyModifyInvoice.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyModifyInvoiceAdjustment.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyModifyInvoicePayment.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyModifyPayment.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyModifyPaymentMethod.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyModifyProduct.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyModifyProductRatePlan.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyModifyRefund.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyModifySubscription.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyModifyTaxationItem.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyModifyUnitOfMeasure.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyModifyUsage.cs" />
+    <Compile Include="IO.Swagger\Model\ProxyNoDataResponse.cs" />
+    <Compile Include="IO.Swagger\Model\PUTAccountingCodeType.cs" />
+    <Compile Include="IO.Swagger\Model\PUTAccountingPeriodType.cs" />
+    <Compile Include="IO.Swagger\Model\PUTAccountType.cs" />
+    <Compile Include="IO.Swagger\Model\PUTAccountTypeBillToContact.cs" />
+    <Compile Include="IO.Swagger\Model\PUTAccountTypeSoldToContact.cs" />
+    <Compile Include="IO.Swagger\Model\PUTAllocateManuallyType.cs" />
+    <Compile Include="IO.Swagger\Model\PUTAttachmentType.cs" />
+    <Compile Include="IO.Swagger\Model\PUTBasicSummaryJournalEntryType.cs" />
+    <Compile Include="IO.Swagger\Model\PUTEventRIDetailType.cs" />
+    <Compile Include="IO.Swagger\Model\PUTJournalEntryItemType.cs" />
+    <Compile Include="IO.Swagger\Model\PUTPaymentMethodResponseType.cs" />
+    <Compile Include="IO.Swagger\Model\PUTPaymentMethodType.cs" />
+    <Compile Include="IO.Swagger\Model\PUTRenewSubscriptionResponseType.cs" />
+    <Compile Include="IO.Swagger\Model\PUTRenewSubscriptionType.cs" />
+    <Compile Include="IO.Swagger\Model\PUTRevenueScheduleResponseType.cs" />
+    <Compile Include="IO.Swagger\Model\PUTRSBasicInfoType.cs" />
+    <Compile Include="IO.Swagger\Model\PUTRSTermType.cs" />
+    <Compile Include="IO.Swagger\Model\PUTScAddType.cs" />
+    <Compile Include="IO.Swagger\Model\PUTScheduleRIDetailType.cs" />
+    <Compile Include="IO.Swagger\Model\PUTScUpdateType.cs" />
+    <Compile Include="IO.Swagger\Model\PUTSpecificDateAllocationType.cs" />
+    <Compile Include="IO.Swagger\Model\PUTSrpAddType.cs" />
+    <Compile Include="IO.Swagger\Model\PUTSrpRemoveType.cs" />
+    <Compile Include="IO.Swagger\Model\PUTSrpUpdateType.cs" />
+    <Compile Include="IO.Swagger\Model\PUTSubscriptionPreviewInvoiceItemsType.cs" />
+    <Compile Include="IO.Swagger\Model\PUTSubscriptionResponseType.cs" />
+    <Compile Include="IO.Swagger\Model\PUTSubscriptionResponseTypeChargeMetrics.cs" />
+    <Compile Include="IO.Swagger\Model\PUTSubscriptionResumeResponseType.cs" />
+    <Compile Include="IO.Swagger\Model\PUTSubscriptionResumeType.cs" />
+    <Compile Include="IO.Swagger\Model\PUTSubscriptionSuspendResponseType.cs" />
+    <Compile Include="IO.Swagger\Model\PUTSubscriptionSuspendType.cs" />
+    <Compile Include="IO.Swagger\Model\PUTSubscriptionType.cs" />
+    <Compile Include="IO.Swagger\Model\QueryResult.cs" />
+    <Compile Include="IO.Swagger\Model\RatePlan.cs" />
+    <Compile Include="IO.Swagger\Model\RatePlanCharge.cs" />
+    <Compile Include="IO.Swagger\Model\RatePlanChargeData.cs" />
+    <Compile Include="IO.Swagger\Model\RatePlanChargeTier.cs" />
+    <Compile Include="IO.Swagger\Model\RatePlanData.cs" />
+    <Compile Include="IO.Swagger\Model\RevenueScheduleItemType.cs" />
+    <Compile Include="IO.Swagger\Model\SaveResult.cs" />
+    <Compile Include="IO.Swagger\Model\SubscribeInvoiceProcessingOptions.cs" />
+    <Compile Include="IO.Swagger\Model\SubscribeOptions.cs" />
+    <Compile Include="IO.Swagger\Model\SubscribeRequest.cs" />
+    <Compile Include="IO.Swagger\Model\SubscribeResult.cs" />
+    <Compile Include="IO.Swagger\Model\Subscription.cs" />
+    <Compile Include="IO.Swagger\Model\SubscriptionData.cs" />
+    <Compile Include="IO.Swagger\Model\SubscriptionProductFeature.cs" />
+    <Compile Include="IO.Swagger\Model\SubscriptionProductFeatureList.cs" />
+    <Compile Include="IO.Swagger\Model\ZObject.cs" />
+    <Compile Include="IO.Swagger\Model\ZObjectUpdate.cs" />
+    <Compile Include="IO.Swagger\Properties\AssemblyInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ZuoraService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="IO.Swagger\packages.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IO.Swagger\IO.Swagger.csproj" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

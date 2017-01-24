@@ -1,0 +1,9 @@
+c:\users\jele\documents\visual studio 2015\Projects\ZuoraSwaggerTest\ZuoraSwaggerTest\bin\Debug\ZuoraSwaggerTest.exe.config
+c:\users\jele\documents\visual studio 2015\Projects\ZuoraSwaggerTest\ZuoraSwaggerTest\bin\Debug\ZuoraSwaggerTest.exe
+c:\users\jele\documents\visual studio 2015\Projects\ZuoraSwaggerTest\ZuoraSwaggerTest\bin\Debug\ZuoraSwaggerTest.pdb
+c:\users\jele\documents\visual studio 2015\Projects\ZuoraSwaggerTest\ZuoraSwaggerTest\bin\Debug\Newtonsoft.Json.dll
+c:\users\jele\documents\visual studio 2015\Projects\ZuoraSwaggerTest\ZuoraSwaggerTest\bin\Debug\RestSharp.dll
+c:\users\jele\documents\visual studio 2015\Projects\ZuoraSwaggerTest\ZuoraSwaggerTest\bin\Debug\Newtonsoft.Json.xml
+c:\users\jele\documents\visual studio 2015\Projects\ZuoraSwaggerTest\ZuoraSwaggerTest\bin\Debug\RestSharp.xml
+c:\users\jele\documents\visual studio 2015\Projects\ZuoraSwaggerTest\ZuoraSwaggerTest\obj\Debug\ZuoraSwaggerTest.exe
+c:\users\jele\documents\visual studio 2015\Projects\ZuoraSwaggerTest\ZuoraSwaggerTest\obj\Debug\ZuoraSwaggerTest.pdb
